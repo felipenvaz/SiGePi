@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Sistema]
+(
+	[Id] INT NOT NULL PRIMARY KEY,
+	[ServerName] VARCHAR(MAX) NOT NULL,
+	[Database] VARCHAR (MAX) NOT NULL
+)

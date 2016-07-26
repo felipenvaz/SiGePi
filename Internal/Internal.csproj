@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAADB5BD-BF0B-4763-9AA6-B8B1E2190B41}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Internal</RootNamespace>
+    <AssemblyName>Internal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AulaPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AulaPicker.Designer.cs">
+      <DependentUpon>AulaPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarDespesa.Designer.cs">
+      <DependentUpon>CadastrarDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarCliente.Designer.cs">
+      <DependentUpon>EditarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faturamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faturamento.Designer.cs">
+      <DependentUpon>Faturamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="IRefreshable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarPagamento.Designer.cs">
+      <DependentUpon>RegistrarPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TodasDespesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodasDespesas.Designer.cs">
+      <DependentUpon>TodasDespesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TodosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodosClientes.Designer.cs">
+      <DependentUpon>TodosClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controle.Designer.cs">
+      <DependentUpon>Controle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TodosPagamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodosPagamentos.Designer.cs">
+      <DependentUpon>TodosPagamentos.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AulaPicker.resx">
+      <DependentUpon>AulaPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarDespesa.resx">
+      <DependentUpon>CadastrarDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarCliente.resx">
+      <DependentUpon>EditarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faturamento.resx">
+      <DependentUpon>Faturamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarPagamento.resx">
+      <DependentUpon>RegistrarPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodasDespesas.resx">
+      <DependentUpon>TodasDespesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodosClientes.resx">
+      <DependentUpon>TodosClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controle.resx">
+      <DependentUpon>Controle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodosPagamentos.resx">
+      <DependentUpon>TodosPagamentos.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDeNegocios.Impl\CamadaDeNegocios.Impl.csproj">
+      <Project>{46fb4e0d-851e-4451-868e-9844ec8926f6}</Project>
+      <Name>CamadaDeNegocios.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaDeNegocios\CamadaDeNegocios.csproj">
+      <Project>{9323a821-4a67-4f6e-aece-78ff6e264fbb}</Project>
+      <Name>CamadaDeNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busy3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busy4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busy5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attention.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
